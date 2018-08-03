@@ -18,7 +18,7 @@ import java.math.BigDecimal;
  */
 @Component
 public class DevOpsBootstrap implements ApplicationListener<ContextRefreshedEvent> {
-    //test of versioning
+    //this is a test of the google integration
     private AuthorRepository authorRepository;
     private ProductCategoryRepository productCategoryRepository;
     private ProductRepository productRepository;
