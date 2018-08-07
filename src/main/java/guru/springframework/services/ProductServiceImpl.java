@@ -31,7 +31,8 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Product getProduct(Integer id) {
         jmsTextMessageService.sendTextMessage("Fetching Product ID: " + id );
-        return productRepository.findOne(id);
+        //New with findOne to findById change, this is the proper replacement
+        return productRepository.findById(id).orElse(null);
     }
 
     @Override
